@@ -28,21 +28,21 @@ describe("Testing Like component", () => {
 	  const likes = container.querySelector("p");
 	  expect(likes.textContent).toBe("Likes: 0");
 	});
-    it("Like increases when liked", () => {
-        const likeBut = document.getElementById("increment");
-        const likes = container.querySelector("p");
-        act(() => {
-          likeBut.dispatchEvent(new MouseEvent("click", { bubbles: true }));
-        });
-        expect(likes.textContent).toBe("Likes: 1");
-    });
-    it("Like decreases when disliked", () => {
-        const dislikeBut = document.getElementById("decrement");
-        const likes = container.querySelector("p");
-        act(() => {
-          dislikeBut.dispatchEvent(new MouseEvent("click", { bubbles: true }));
-        });
-        expect(likes.textContent).toBe("Likes: -1");
-    });
+  it("Like increases when liked", () => {
+      const likeBut = document.getElementById("increment");
+      const likes = container.querySelector("p");
+      act(() => {
+        likeBut.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+      });
+      expect(likes.textContent).toBe("Likes: 1");
+  });
+  it("Like decreases when disliked", () => {
+      const dislikeBut = document.getElementById("decrement");
+      const likes = container.querySelector("p");
+      act(() => {
+        dislikeBut.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+      });
+      expect(likes.textContent).toBe("Likes: -1");
+  });
 
 });
