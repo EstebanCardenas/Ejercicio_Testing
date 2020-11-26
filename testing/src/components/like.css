@@ -1,0 +1,16 @@
+button {
+    margin-bottom: 10px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+button[id="decrement"] {
+    background-color:rgb(221, 79, 79, 0.7);
+    margin-left: 5px;
+    border: 1px solid red;
+}
+
+button[id="increment"] {
+    background-color: rgb(71, 144, 238, 0.7);
+    border: 1px solid blue;
+}
